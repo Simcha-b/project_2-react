@@ -1,0 +1,39 @@
+/* עיצוב כללי של ה-todo */
+.todo {
+    display: flex;
+    align-items: center; /* יישור התוכן במרכז אנכי */
+    justify-content: space-between; /* ריווח שווה בין האלמנטים */
+    background-color: #f9f9f9; /* צבע רקע בהיר */
+    padding: 10px 20px; /* ריווח פנימי */
+    margin-bottom: 10px; /* ריווח בין todos */
+    border-radius: 8px; /* פינות מעוגלות */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* הצללה עדינה */
+    transition: background-color 0.3s ease; /* מעבר רקע חלק */
+  }
+  
+  /* עיצוב הכותרת של todo */
+  .todo h1 {
+    font-size: 18px; /* גודל טקסט לכותרת */
+    margin: 0; /* ביטול מרווחים */
+    color: #333; /* צבע טקסט כהה */
+  }
+  
+  /* עיצוב ה-checkbox */
+  .todo input[type="checkbox"] {
+    width: 20px; /* רוחב ה-checkbox */
+    height: 20px; /* גובה ה-checkbox */
+    cursor: pointer; /* סמן יד לרמז שניתן ללחוץ */
+  }
+  
+  /* אפקט ריחוף מעל todo */
+  .todo:hover {
+    background-color: #e0e0e0; /* שינוי צבע רקע בעת ריחוף */
+  }
+  
+  /* עיצוב ל-todo שהושלם */
+  .todo.completed {
+    background-color: #d1ffd1; /* צבע רקע ירוק */
+    text-decoration: line-through; /* קו חוצה על הטקסט */
+    color: #888; /* צבע טקסט מעומעם */
+  }
+  

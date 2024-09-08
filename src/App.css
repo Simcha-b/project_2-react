@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content  {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .navbar {
+    background-color: #d2c1c1; /* צבע רקע כהה לתפריט */
+    padding: 10px; /* ריווח פנימי סביב התפריט */
+    display: flex; /* הצגת האלמנטים בשורה אחת */
+    align-items: center; /* יישור אנכי של האלמנטים במרכז */
+    justify-content: space-between; /* ריווח שווה בין האלמנטים */
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* עיצוב הכפתור */
+  .navbar button {
+    background-color: #f00; /* צבע רקע אדום */
+    color: #fff; /* צבע טקסט לבן */
+    border: none; /* ביטול גבולות ברירת מחדל */
+    padding: 10px 20px; /* ריווח פנימי של כפתור */
+    cursor: pointer; /* סמן היד כדי לציין שהכפתור ניתן ללחיצה */
+    font-size: 16px; /* גודל הטקסט בכפתור */
+    border-radius: 5px; /* פינות מעוגלות לכפתור */
+    transition: background-color 0.3s; /* אפקט מעבר חלק לשינוי צבע רקע */
   }
-}
+  
+  .navbar button:hover {
+    background-color: #c00; /* שינוי צבע רקע בעת ריחוף מעל הכפתור */
+  }
+  
+  /* עיצוב הקישורים */
+  .navbar a {
+    color: #282424; /* צבע טקסט לבן */
+    text-decoration: none; /* ביטול קו תחתון */
+    padding: 10px 15px; /* ריווח פנימי מסביב לטקסט */
+    font-size: 26px; /* גודל הטקסט בקישורים */
+    transition: color 0.3s; /* אפקט מעבר חלק לשינוי צבע */
+  }
+  
+  .navbar a:hover {
+    color: #f0f; /* שינוי צבע טקסט בעת ריחוף מעל הקישור */
+  }
+  
+  /* עיצוב ה-Outlet אם צריך */
+  .navbar .outlet {
+    margin-left: 20px; /* ריווח שמאלי לתוכן של ה-Outlet */
+  }
+  
+
